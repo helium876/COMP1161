@@ -120,7 +120,13 @@ public class MainMethod {
 				case 4: //View Events
 					try{
 						for(int x=0; x <= p; x++){
-							System.out.println(evt[x].getName());
+
+							System.out.println("Name: " + evt[x].getName());
+							System.out.println("Description: "+evt[x].getDescription());
+							System.out.println("From: "+evt[x].getStart_date() + " To: " + evt[x].getEnd_date());
+							System.out.println("Time: "+evt[x].getStart_time() + " To: " + evt[x].getEnd_time());
+							System.out.println("Location: " + evt[x].getLocation());
+							System.out.println("*******************************************************************\n\n");
 						}
 					}
 					catch(NullPointerException E){

@@ -10,7 +10,24 @@ public class Events {
 	private int ref_num;
 	private String status; 
 
+	public Events(){
+		
+	}
 	
+	public Events(String name, String description,String start_date,String end_date,String start_time,String end_time,String location, int attendance, int ref_num, String status, EventType type){
+		this.setName(name);
+		this.setDescription(description); 
+		this.setStart_date(start_date); 
+		this.setEnd_date(end_date); 
+		this.setStart_time(start_time); 
+		this.setEnd_time(end_time);
+		this.setLocation(location); 
+		this.setAttendance(attendance);
+		this.setRef_num(ref_num); 
+		this.setStatus(status);
+		this.setType(type);
+		
+	}
 	
 	public String getStatus() {
 		return status;
@@ -34,25 +51,6 @@ public class Events {
 
 	public void setAttendance(int attendance) {
 		this.attendance = attendance;
-	}
-
-	public Events(){
-		
-	}
-	
-	public Events(String name, String description,String start_date,String end_date,String start_time,String end_time,String location, int attendance, int ref_num, String status, EventType type){
-		this.name = name;
-		this.setDescription(description); 
-		this.setStart_date(start_date); 
-		this.setEnd_date(end_date); 
-		this.setStart_time(start_time); 
-		this.setEnd_time(end_time);
-		this.setLocation(location); 
-		this.setAttendance(attendance);
-		this.setRef_num(ref_num); 
-		this.setStatus(status);
-		this.setType(type);
-		
 	}
 	
 	public EventType getType() {
