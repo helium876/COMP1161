@@ -80,9 +80,10 @@ public class MainMethod {
 					
 				case 3: //Add Events
 					Ecount++;
+					in.nextLine();
 					System.out.println("Enter Event Name");
 					Tmp_name =  in.nextLine();
-					in.nextLine();
+					//in.nextLine();
 					System.out.println("Enter Description");
 					Tmp_description =  in.nextLine();
 					//in.nextLine();
